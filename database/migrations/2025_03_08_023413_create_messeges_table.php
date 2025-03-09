@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('messeges', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('from_id');
-            $table->foreignId('to_id');
+//            $table->foreignId('from_id');
+//            $table->foreignId('to_id');
             $table->text('body')->nullable();
             $table->json('attachment')->nullable();
             $table->boolean('seen')->default(0);
